@@ -1,0 +1,28 @@
+# Release binaries are uploaded through GitHub Releases, not committed here.
+*.zip
+*.apk
+*.exe
+*.pck
+
+# No macOS release artifacts in this repository.
+*.dmg
+*.pkg
+*.app/
+*.app.zip
+
+# Do not commit official card images, image packs, or other bitmap resources.
+card_images/
+accessories/
+卡图资源*/
+简中卡图/
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.gif
+*.bmp
+*.tga
+
+# Local staging folder for files that will be uploaded manually to GitHub Releases.
+release-assets/*
+!release-assets/README.md
