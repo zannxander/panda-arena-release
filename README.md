@@ -10,6 +10,8 @@ Download the latest version from:
 
 https://github.com/zannxander/panda-arena-release/releases/latest
 
+Latest version: `0.1.1`
+
 Current release targets:
 
 - Windows
@@ -17,11 +19,11 @@ Current release targets:
 
 macOS builds are not included in this release repository.
 
-## Card Images
+## Visual Resources
 
-Official card images are not included in this repository or in release assets.
+Official card images, official logos, trademark artwork, and other official visual materials are not used, included, bundled, or distributed in this repository or in release assets.
 
-The game supports user-provided card images. Put compatible image files into the `card_images` folder next to the game executable, or import image packs inside the client on supported platforms.
+The game supports user-provided local images. Put compatible image files into the `card_images` folder next to the game executable, or import image packs inside the client on supported platforms.
 
 ## Notes
 

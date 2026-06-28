@@ -4,8 +4,8 @@ This folder is only for local staging before manually uploading files to GitHub 
 
 Expected files:
 
-- `PANDA-0.1.0-windows.zip`
-- `PANDA-0.1.0-android.apk`
+- `PANDA-0.1.1.zip`
+- `PANDA-0.1.1.apk`
 
 Do not place macOS builds or card image packs here.
 
