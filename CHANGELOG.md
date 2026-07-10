@@ -1,5 +1,36 @@
 # Changelog
 
+## 0.2.3
+
+### Online Play
+
+- Updated the Windows, Android, and room-server version to `0.2.3`.
+- Fixed matchmaking and profile flow routing after the recent battle-network split.
+- Kept the server protocol compatible with the current `net-1` online play flow.
+
+### Rules And Card Effects
+
+- Improved structured card-name identity handling for effects that care about declared names, treated-as names, and temporary name changes.
+- Fixed several reported same-root card effect issues around attached/granted declare abilities, contact display, choice scopes, and public deck warning labels.
+- Improved display and filtering for choice windows so illegal or unavailable choices are handled consistently.
+
+### Mobile Experience
+
+- Fixed Android touch behavior in action-variant windows so short taps select cards and long presses open card details without conflicting.
+- Kept Android release signing compatible with previous signed builds.
+
+### Interface And Maintenance
+
+- Continued the battle view split into focused controllers for room flow, matchmaking flow, action panels, card details, choice popups, logs, and HUD widgets.
+- Added regression checks for the latest reported card-effect cases, mobile touch handling, deck warning labels, and selection-window display scope.
+
+### Update Notes
+
+- Windows: use `PANDA-0.2.3.zip`.
+- Android: install `PANDA-0.2.3.apk`.
+- Online play requires the room server to be updated to `0.2.3`.
+- This release does not include official card image resources. Players still need to provide local card images or import image packs in the client.
+
 ## 0.2.2
 
 ### Online Play
