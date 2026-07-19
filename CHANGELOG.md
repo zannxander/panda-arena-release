@@ -1,5 +1,39 @@
 # Changelog
 
+## 0.3.1
+
+### Engine And Compatibility
+
+- Migrated the Windows and Android clients to Godot 4.7 while preserving the existing gameplay and online protocol.
+- Kept card images as external player-provided resources and excluded development E2E fixtures from release packages.
+- Improved alternate-print image identity so a missing PR or alternate artwork uses the localized placeholder instead of borrowing another printing's image.
+
+### Cards And Rules
+
+- Added the latest PR card batch and alternate-print identities, including localized card data and structured effect support.
+- Fixed several reported card-effect issues involving card-name identity, temporary name changes, attached or granted declare abilities, choice scopes, and follow-up effects.
+- Corrected dual-turn cut-in effects so their AP bonus changes properly between the player's turn and the opponent's turn.
+- Corrected effects that require revealing an exact number of cards and refined optional target selection behavior.
+
+### Decks And Interface
+
+- Improved multi-feature deck searches and official banlist warnings, including clearer banned and limited-card markers.
+- Added structured deck statistics for Flash, Cut-in, and Disguise cards.
+- Improved cloud deck draft uploads, accessory-scheme management, and persistent online connection indicators.
+- Restored card-detail access for FILE, evidence, and remove zones on desktop and Android.
+
+### Android Experience
+
+- Restored touch scrolling in card-detail and battle-effect windows.
+- Increased touch-scroll responsiveness and kept short-tap selection separate from long-press card details.
+
+### Update Notes
+
+- Windows: use `PANDA-0.3.1.zip`.
+- Android: install `PANDA-0.3.1.apk`.
+- No room-server update is required for this client release.
+- This release does not include official card image resources. Players still need to provide local card images or import image packs in the client.
+
 ## 0.2.3
 
 ### Online Play
