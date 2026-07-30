@@ -1,5 +1,39 @@
 # Changelog
 
+## 0.5.0
+
+### New Cards And Rules
+
+- Added the complete CT-P10 card set with structured effects, localized card data, product filtering, and broad player-flow E2E coverage.
+- Added Promotion Pack Vol.14 cards and their alternate-print identities without bundling official card images.
+- Fixed reported effect issues involving source zones, card-name and trait matching, optional branches, play states, contact follow-ups, FILE and remove-area interactions, and granted abilities.
+- Improved structured effect labels so declaration choices and multi-branch effects are easier to distinguish during play.
+
+### Game Flow And Interface
+
+- Added a synchronized rock-paper-scissors step before the opening mulligan, with simultaneous reveal, tie retries, and reusable card-effect support.
+- Added distinct gesture icons and clearer choice-state handling so one player's confirmation cannot erase the other player's draft selection.
+- Improved pending-effect and selection-window summaries, including clearer branch labels and consistent return-to-table behavior.
+- Fixed several reported selection-window cases so legal and illegal candidates are displayed and resolved consistently.
+
+### Android
+
+- Added an Android document-provider import bridge for card-image ZIP files and individual images, improving compatibility with newer Android privacy and storage restrictions.
+- Preserved compatibility with older supported Android versions and existing imported image libraries.
+- Kept development E2E components, test scenes, server files, and official visual resources out of exported clients.
+
+### Stability And Testing
+
+- Expanded full player-flow E2E coverage for CT-P10, Promotion Pack Vol.14, recent feedback reports, shared rock-paper-scissors, Android image import, and effect-button labels.
+- Updated runtime rule snapshots and structured effect generation to keep alternate printings and future cards on the same shared mechanics.
+
+### Update Notes
+
+- Windows: use `PANDA-0.5.0.zip`.
+- Android: install `PANDA-0.5.0.apk`.
+- Online play requires the room server to be updated for the synchronized pregame rock-paper-scissors flow.
+- This release does not include official card images. Players still need to provide local card images or import image packs in the client.
+
 ## 0.3.1
 
 ### Engine And Compatibility
