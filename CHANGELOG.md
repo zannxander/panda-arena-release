@@ -1,5 +1,38 @@
 # Changelog
 
+## 0.5.3
+
+### Account Recovery
+
+- Added a secure six-digit email-code flow for forgotten passwords.
+- Added password-recovery entry points for both the login screen and locally saved accounts, without asking saved users to enter their email address again.
+- Hardened recovery requests, one-time challenges, successful reset handling, and old-session invalidation.
+
+### Decks And Interface
+
+- Deck cards now default to level sorting from highest to lowest when the deck editor opens.
+- Added a game-start sound and refined recent battle choice, board rendering, and trait-display behavior.
+
+### Cards And Rules
+
+- Fixed effects that look at three deck cards and select one so every unselected card moves to the remove area.
+- Fixed an event effect that could be queued twice instead of resolving as one conditional effect.
+- Fixed a hand-to-field effect so its required field discard must be a black character.
+- Fixed the Azusa Enomoto kidnapping case effect so characters in every zone actually gain the Cafe Poirot trait for the turn, including cards in hand used by follow-up effects.
+- Preserved generated CT-P10 rule semantics and corrected additional recently reported card-effect and trait-matching cases.
+
+### Stability And Testing
+
+- Expanded real player-flow regression coverage for password recovery, deck sorting, recent feedback reports, Android compatibility, and structured card effects.
+- Verified the Windows and Android release builds against the full automated gameplay suite.
+
+### Update Notes
+
+- Windows: use `PANDA-0.5.3.zip`.
+- Android: install `PANDA-0.5.3.apk`.
+- The room server required for password recovery has already been updated; players do not need to perform any server-side action.
+- This release does not include official card images. Players still need to provide local card images or import image packs in the client.
+
 ## 0.5.0
 
 ### New Cards And Rules
