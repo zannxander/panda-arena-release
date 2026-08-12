@@ -1,5 +1,38 @@
 # Changelog
 
+## 0.6.0
+
+### Battle Replays
+
+- Added local replay recording for completed local and online battles.
+- At the end of a recorded match, choose whether to save it; unfinished save decisions can be recovered from the replay library.
+- Added a replay library with playback, import, export, and deletion controls.
+- Added pause, restart, step backward or forward, and 0.5x, 1x, 2x, and 4x playback speeds.
+- Replay playback skips player thinking and network waiting time and advances at a fixed action interval.
+- Added free switching between P0 and P1 perspectives while keeping only the selected player's private information visible.
+- Replay mode is read-only and validates file integrity, rules and card compatibility, action order, and deterministic state.
+- Preserved compatibility with replay files created during 0.6.0 development.
+
+### Interface
+
+- Added a Replays entry to the battle menu.
+- Kept the battle entry menu touch-friendly with a two-column layout and no scrolling.
+- Added English, Simplified Chinese, and Japanese replay interface text and visible errors for invalid or incompatible files.
+
+### Stability And Testing
+
+- Added replay recording, persistence, reconnect reconstruction, playback, compatibility, corruption, and UI regression coverage.
+- Verified an existing 80-action replay from start to finish.
+- Verified the Windows and Android release builds; Android uses the same signing certificate as 0.5.3.
+
+### Update Notes
+
+- Windows: use `PANDA-0.6.0.zip`.
+- Android: install `PANDA-0.6.0.apk`; it can be installed over 0.5.3.
+- No room-server update is required for this client release.
+- Replay files can reveal both players' complete decks and private draw order when shared.
+- This release does not include official card images. Players still need to provide local card images or import image packs in the client.
+
 ## 0.5.3
 
 ### Account Recovery
