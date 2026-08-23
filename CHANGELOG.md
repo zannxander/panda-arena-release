@@ -1,5 +1,36 @@
 # Changelog
 
+## 0.6.3
+
+### Battle Replays
+
+- Slowed replay playback so the previous 0.25x timing is now the new 1x baseline.
+- Updated the 0.5x, 1x, 2x, and 4x controls to use consistent action intervals of 4, 2, 1, and 0.5 seconds.
+- Refreshed replay rules compatibility after the card-rule corrections in this release.
+
+### Cards And Rules
+
+- Fixed `CT-P09-109` Kaito Kid & Toru Amuro so its same-level, same-name deck reveal can find `CT-P10-038` Kaito Kuroba through the Kaito Kid name it also has in the deck.
+- Preserved additive card-name identity: `CT-P10-038` remains Kaito Kuroba while also being treated as Kaito Kid in the deck and remove area.
+- Fixed characters printed to enter the field asleep so their entry state is applied consistently, including `PR186`.
+- Separated rules-level hand reveals from cards that are only shown as part of another action, preventing unrelated reveal triggers from activating.
+- Fixed effects that require a character to enter through one of the player's own character abilities so they verify the real effect source and owner.
+- Fixed several reported effects involving solution-stage Flash targets, matching revealed levels, and contact-removal draw triggers.
+
+### Stability And Testing
+
+- Added focused regression coverage for the recent Bug 22 and Bug 23 reports, alternate printings, card-name aliases, reveal ownership, effect sources, and sleeping entry states.
+- Passed the complete client E2E suite: 964 tests.
+- Verified the Windows release launch, Android package metadata, release signing certificate continuity, and release-package isolation rules.
+
+### Update Notes
+
+- Windows: use `PANDA-0.6.3.zip`.
+- Android: install `PANDA-0.6.3.apk`; it can be installed over 0.6.2 with the same signing certificate.
+- No room-server update is required for this client release.
+- Replays recorded with an older rules fingerprint may be rejected as incompatible after these card-rule changes.
+- This release does not include official card images. Players still need to provide local card images or import image packs in the client.
+
 ## 0.6.0
 
 ### Battle Replays

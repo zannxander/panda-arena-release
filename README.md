@@ -10,7 +10,7 @@ Download the latest version from:
 
 https://github.com/zannxander/panda-arena-release/releases/latest
 
-Latest version: `0.6.0`
+Latest version: `0.6.3`
 
 Current release targets:
 
