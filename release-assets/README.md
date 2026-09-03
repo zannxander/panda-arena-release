@@ -4,9 +4,10 @@ This folder is only for local staging before manually uploading files to GitHub 
 
 Expected files:
 
-- `PANDA-0.6.3.zip`
-- `PANDA-0.6.3.apk`
+- `PANDA-0.7.1.zip`
+- `PANDA-0.7.1.apk`
+- `PANDA-0.7.1-macos.zip`
 
-Do not place macOS builds or card image packs here.
+Do not place card image packs here.
 
-Files in this folder are ignored by Git, except this README.
+Files in this folder are ignored by Git, except this README. Versioned release-note Markdown files are added explicitly when a release is prepared.

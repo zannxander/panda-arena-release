@@ -1,5 +1,45 @@
 # Changelog
 
+## 0.7.1
+
+### Battle Replays And Bug Reports
+
+- Added encrypted battle-replay snapshots to the in-battle bug-report flow so private match information is not copied as plain text.
+- Kept normal `.pdr` replay files separate and unencrypted so players can continue to save, share, import, and watch them normally.
+- Changed replay controls into a touch-friendly drawer that stays collapsed at the right edge until opened.
+- Improved Android replay importing with the native document picker, including access to downloaded files and readable native selection colors.
+
+### Mobile And Interface
+
+- Reworked touch gesture arbitration so taps, scrolling, card dragging, and long-press details no longer generate conflicting desktop-style mouse actions.
+- Increased the card-detail long-press threshold and made drags that begin on a card continue scrolling smoothly in target-selection and other card windows.
+- Added return-to-table and resume controls across optional confirmations, name and trait input, effect modes, revealed-card reviews, effect rock-paper-scissors, and related effect windows.
+- Added an explicit choose-none action when an official effect allows selecting up to a number of cards.
+- Made effect windows fit smaller phone screens without changing the underlying card-effect requirements.
+
+### Decks And Card Rules
+
+- Deck codes now list main-deck cards by level from highest to lowest, matching the deck editor's default order.
+- Corrected temporary card-name changes so effects that replace a name no longer leave the printed name active at the same time.
+- Preserved additive zone-based name aliases where the official effect says a card is also treated as another name.
+- Corrected reveal-and-return effects so players can review the revealed cards and then shuffle them back without unnecessary manual ordering, while effects that officially require ordering still keep it.
+- Updated the affected card-rule and replay compatibility fingerprints.
+
+### Platform Support And Testing
+
+- Added a universal macOS build with corrected Unix executable permissions and a Simplified Chinese, Japanese, and English launch guide.
+- Passed the complete client E2E suite: 1,020 tests.
+- Verified the Windows release launch, Android package metadata and signing continuity, macOS archive permissions, and release-package isolation rules.
+
+### Update Notes
+
+- Windows: use `PANDA-0.7.1.zip`.
+- Android: install `PANDA-0.7.1.apk`; it uses the same signing certificate as earlier signed releases.
+- macOS: use `PANDA-0.7.1-macos.zip`; fully extract it and follow the included launch instructions on first run.
+- No room-server update is required for this client release.
+- Replays recorded with an older rules fingerprint may be rejected as incompatible after the card-rule corrections in this release.
+- This release does not include official card images. Players still need to provide local card images or import image packs in the client.
+
 ## 0.6.3
 
 ### Battle Replays
