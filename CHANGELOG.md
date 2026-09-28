@@ -1,5 +1,35 @@
 # Changelog
 
+## 0.7.3
+
+This release includes the 0.7.2 room-timer changes, which were not previously published in this release repository.
+
+### Timed Rooms And Tournaments
+
+- Added optional turn limits of 90, 180, 300, 600, or 900 seconds and match limits of 20, 25, 30, 40, 50, or 60 minutes to manually created rooms. Both default to unlimited and begin after both players finish mulligan.
+- Added server-controlled tournament rooms with organizer-issued access, room creation and monitoring, and authorized observation. Tournament settings cannot be changed by players.
+- Authorized organizers can switch between player perspectives and inspect the selected player's hand even when players have disabled ordinary player-view spectating. Ordinary spectators still follow the players' visibility settings.
+- The tournament manager and organizer credentials are distributed privately, not in the public game download. The owner's tournament-service switch is independent of ordinary play.
+
+### Battle Replays
+
+- Replays from another game version are now attempted when their format is valid. Playback still checks recorded state where available and stops at a divergent action; compatibility is not guaranteed for every historical replay.
+- Replay playback can present recorded effect-choice windows as read-only scenes. The recorded selection is highlighted and placed first, and playback pauses while a viewer inspects card or zone details.
+- Kept ordinary player `.pdr` replays unencrypted and separate from encrypted bug-report data.
+
+### Cards And Stability
+
+- Fixed an effect-choice loop involving Soccer Shinichi when no attached card is available.
+- Expanded automated coverage for cross-version playback, effect-choice presentation, tournament observation, and rules-legal three-language demo matches. The current client passed 1,291 Godot E2E cases.
+
+### Update Notes
+
+- Windows: extract `PANDA-0.7.3.zip` and run `PANDA.exe`.
+- Android: install `PANDA-0.7.3.apk`; it uses the established release signing identity.
+- macOS: extract `PANDA-0.7.3-macos.zip` and follow the included Chinese, Japanese, or English first-launch instructions. The app is not Apple-notarized.
+- Timed rooms and tournament observation require a compatible updated room server. The tournament owner must enable the service separately; installing this client does not turn it on.
+- Official card images are not included. Players can continue to provide a local `card_images` folder or import an image pack in the client.
+
 ## 0.7.1
 
 ### Battle Replays And Bug Reports
