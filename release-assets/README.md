@@ -1,15 +1,15 @@
 # Local Release Asset Staging
 
-This folder is only for local staging before manually uploading files to GitHub Releases.
+This folder is only for local staging before uploading files to GitHub Releases.
 
 Expected files:
 
-- `PANDA-0.7.3.zip`
-- `PANDA-0.7.3.apk`
-- `PANDA-0.7.3-macos.zip`
-- `PANDA-0.7.3-SHA256SUMS.txt`
+- `PANDA-0.7.5.zip`
+- `PANDA-0.7.5.apk`
+- `PANDA-0.7.5-macos.zip`
+- `PANDA-0.7.5-SHA256SUMS.txt`
 
-Use `PANDA-0.7.3-release-notes.md` as the GitHub Release description.
+Use `PANDA-0.7.5-release-notes.md` as the GitHub Release description.
 
 The tournament organizer manager and its credentials are distributed privately,
 not attached to the public game release. The three promotional videos are separate
