@@ -10,7 +10,12 @@ Download the latest version from:
 
 https://github.com/zannxander/panda-arena-release/releases/latest
 
-Latest version: `0.7.5`
+Latest version: `0.8.3`
+
+Version 0.8.3 includes the accumulated 0.8.0–0.8.2 client updates, the currently
+implemented CT-P11 previews (100 base cards / 162 printings), SP001–SP018,
+additional parallel artwork identities, deck-search improvements, and card-rule
+and effect-window corrections. See the release notes for compatibility details.
 
 Current release targets:
 

@@ -1,5 +1,47 @@
 # Changelog
 
+## 0.8.3
+
+This public release includes the accumulated 0.8.0–0.8.2 client changes since the
+previous public 0.7.5 release.
+
+### Cards And Decks
+
+- Implemented the currently reviewed CT-P11 previews: 100 base cards and 162
+  printings, including 17 additional costume, comic, premium-foil and quote-signature variants.
+- Added both Executive Collections (SP001–SP018), SP rarity filtering, and a
+  separate SP product category in both deck editors.
+- Completed unofficial Simplified Chinese CT-P11 display text and aligned
+  related legacy terminology. English card effects remain in Japanese.
+- Corrected compound MR names, printed-color identity, and SEC filtering while
+  preserving the underlying MR rules and shared copy limits.
+
+### Battles And Interface
+
+- Corrected batch character entry and Switch resumption at field capacity,
+  avoiding duplicate entries and unfinished follow-up operations.
+- Corrected explicit Swift/Flash identity checks without bypassing their
+  activation conditions, suppression or independent feature requirements.
+- Corrected partner/case costs and target restrictions on the affected legacy
+  effects, including B09105/P and B09019/P, plus Maria's cut-in selection.
+- Corrected disguise inheritance and last-known leave-field identities.
+- Improved distinct effect/mode labels, independent declarations, return
+  navigation, and scrolling for long card text and selection windows.
+
+### Distribution And Compatibility
+
+- Windows, Android and universal Intel/Apple Silicon macOS builds are provided.
+  Android retains the existing release signing identity. macOS is not notarized;
+  its archive metadata, executable permissions and resources were checked on
+  Windows, not by a native Mac launch.
+- Official card images and private organizer credentials are not included in
+  public release assets. Existing local images may still be used.
+- No server deployment, tournament grant change or organizer-manager replacement
+  is performed by this client release. The two held changing BOX partner cards
+  are not included.
+- Corrected rules may cause historical replays to diverge at the previously
+  incorrect operation. Recorded state hashes are never bypassed.
+
 ## 0.7.3
 
 This release includes the 0.7.2 room-timer changes, which were not previously published in this release repository.
